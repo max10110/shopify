@@ -6,7 +6,7 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-{%- for product in section.settings.collection-my -%}
+{% for product in section.settings.collection-my %}
 <div class="card" style="width: 18rem;">
   <img src="{{ product | img_url }}" class="card-img-top" alt="...">
   <div class="card-body">
@@ -15,7 +15,7 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-{%- endfor -%}
+{% endfor %}
 
 {% schema %}
   {
