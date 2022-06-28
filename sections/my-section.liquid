@@ -1,0 +1,36 @@
+<section>
+    <div class="container">
+        <h1 class="jumbotron-heading">{% section.settings.title%}</h1>
+        <p class="lead text-muted">{% section.settings.desc%}</p>
+        <p>
+          <a href="{% section.settings.url%}" class="btn btn-primary my-2">go url</a>
+        </p>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "My custom section",
+  "class": "section-my",
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "default": "Write title here",
+        "label": "Main heading"
+    },
+    {
+        "type": "url",
+        "id": "link",
+        "default": "https://getbootstrap.com/docs/4.0/examples/album/",
+        "label": "Url link"
+    },
+    {
+        "type": "richtext",
+        "id": "desc",
+        "default": "descaription",
+        "label": "Url link"
+    }
+  ]
+}
+{% endschema %}
