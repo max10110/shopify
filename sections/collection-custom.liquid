@@ -6,7 +6,7 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-{{ collections[section.settings.collection] | json }}
+{{ collections[section.settings.collection].products | json }}
 {% for product in collections[section.settings.collection].products %}
 <div class="card" style="width: 18rem;">
   <img src="{{ product | img_url }}" class="card-img-top" alt="...">
