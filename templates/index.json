@@ -3,7 +3,7 @@
     "1656448169f251a06d": {
       "type": "collection-custom",
       "settings": {
-        "collection-my": "frontpage"
+        "collection": "frontpage"
       }
     }
   },
