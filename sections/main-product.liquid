@@ -4,12 +4,11 @@
 			<div class="container">	
 				<div class="col-md-12">
 					<div class="product col-md-3 service-image-left">
-                    {% if product.selected_or_first_available_variant.featured_media != null %}
+                    {{ product.selected_or_first_available_variant.featured_media }}
 						<center>
 							<img id="item-display" src="{{ product.selected_or_first_available_variant.featured_media | product_img_url: 'large' }}" alt="{{ product.selected_or_first_available_variant.title | escape }}"></img>
 						</center>
 					</div>
-					{% endif %}
 				</div>
 					
 				<div class="col-md-7">
