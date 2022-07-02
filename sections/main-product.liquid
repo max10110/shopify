@@ -42,8 +42,10 @@
               				{{ variant.title }}
               			</option>
               		{% endif %}
-  					<input type="submit" value="Add to cart" class="btn" />
               	{% endfor %}
   			</select>
+  			<input min="1" type="number" id="quantity" name="quantity" value="1"/>
+    		<input type="submit" value="Add to cart" class="btn" />
+
   		{% endform %}
 </div>
