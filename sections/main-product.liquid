@@ -31,6 +31,18 @@
 			</div> 
 		</div>
 		{% form 'product', product %}
-  			<input type="submit" value="Add to cart">
+  			<select name="id">
+  				{% for variant in product.variants %}
+              		{% if variant.available %}
+              			<option value="{{ variant.id }}" >
+              				{{ variant.title }}
+              			</option>
+              		{% else %}
+              			<option disabled="disabled" value="{{ variant.id }}" >
+              				{{ variant.title }}
+              			</option>
+              		{% endif %}
+              	{% endfor %}
+  			</select>
   		{% endform %}
 </div>
